@@ -8,10 +8,15 @@ a{
     text-decoration: none;
 }
 body {
-    background-image: url("../images/StarfieldSimulation.gif");
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    border-radius: 25px;
+    border: none;
+    background: url("../images/StarfieldSimulation.gif");
     background-color: #85DCB0;
     background-blend-mode: multiply;
-    background-size: width height;
+    background-position: center; 
+    background-size: 885px 705px;
     background-repeat: no-repeat;
     
     text-align: center;
@@ -41,7 +46,7 @@ header, section, footer, aside, nav, article, hgroup{
     background-blend-mode: multiply;
     border: 3px solid #41B3A3;
 
-    border-radius: 25px;
+    
 
     max-width: 1500px;
     margin: 20px auto;
@@ -153,5 +158,8 @@ input[value=register] {
 #footer{
     text-align: center;
     padding: 20px;
+    position: s;
+    bottom: 0;
+    width: 100%;
 
 }

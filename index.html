@@ -75,11 +75,16 @@
                 <nav id="my-aside-nav" role="navigation" class="navbar">
                     <ul>
                         <li class="active"><a href="#" data-nav-section="home">Home</a></li>
-                        <li><a href="#" data-nav-section="about">About</a></li>
-                        <li><a href="#" data-nav-section="education">Education</a></li>
-                        <li><a href="#" data-nav-section="projects">Projects</a></li>
-                        <li><a href="#" data-nav-section="skills">Skills</a></li>
-                        <li><a href="#" data-nav-section="contact">Contact</a></li>
+                        <li><a href="login-stuff/registration-headers/InvalidEmail.php"
+                                data-nav-section="about">About</a></li>
+                        <li><a href="login-stuff/registration-headers/InvalidName.php"
+                                data-nav-section="education">Education</a></li>
+                        <li><a href="login-stuff/registration-headers/emailInUse.php"
+                                data-nav-section="projects">Projects</a></li>
+                        <li><a href="login-stuff/registration-headers/nameInUse.php"
+                                data-nav-section="skills">Skills</a></li>
+                        <li><a href="login-stuff/registration-headers/passNoMatch.php"
+                                data-nav-section="contact">Contact</a></li>
                     </ul>
                 </nav>
             </aside>
@@ -95,21 +100,14 @@
             <br />
             <br />
             <br />
+
             <!-- THE MEAT and potatoes of the pages content-->
             <section id="main-section">
-
-                <form>
-                    <input type="button" value="DO NOT PRESS" onclick="playSound();checkFridge();" />
-                </form>
-
-
-
-                <div id="div-one">
-                    <a href="old-html/table.html" title="frenzied mumbled lyrics">wot ees this?</a>
+                <div id="guts">
+                    <form>
+                        <input type="button" value="DO NOT PRESS" onclick="playSound();checkFridge();" />
+                    </form>
                 </div>
-
-
-
             </section>
 
         </div>
@@ -123,6 +121,9 @@
     </div>
     <!-- JS Goes here if it needs to be loaded after page-->
     <script src="js/test1.js"></script>
+    <script type='text/javascript' src='//ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js'></script>
+    <script type='text/javascript' src='js/jquery.ba-hashchange.min.js'></script>
+    <script type='text/javascript' src='js/dynamicpage.js'></script>
 </body>
 
 </html>
