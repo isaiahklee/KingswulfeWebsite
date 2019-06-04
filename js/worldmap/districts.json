@@ -1,0 +1,30 @@
+{
+    "districts": [
+        {
+            "x": 100,
+            "y": 100,
+            "name": "Test District One",
+            "gov": "1",
+            "princ": "2",
+            "duchy": "3",
+            "county": "4",
+            "district": "5",
+            "armies": [],
+            "building": "6",
+            "specresc": "7"
+        },
+        {
+            "x": 200,
+            "y": 200,
+            "name": "Test District Two",
+            "gov": "one",
+            "princ": "two",
+            "duchy": "three",
+            "county": "four",
+            "district": "five",
+            "armies": [],
+            "building": "six",
+            "specresc": "seven"
+        }
+    ]
+}

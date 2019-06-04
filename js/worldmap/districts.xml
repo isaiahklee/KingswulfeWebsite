@@ -1,0 +1,13 @@
+<map>
+	<principality name="prince bigggins">
+		<duchy name = "slayer empire">
+			<county name="deadlands">
+				<district name="bort becka">
+					<units>FIVE HUNDRED BEES</units>
+					<buildings>2 Horseradish farms</buildings>
+					<spec-resources>honey and Horseradish</spec-resources>
+                </district>
+            </county>
+        </duchy>
+    </principality>
+</map>

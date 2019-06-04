@@ -1,0 +1,128 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+
+    <title>Isaiah Kingswulfe Lee</title>
+
+    <!-- css stylesheet\s location\s -->
+    <link rel="stylesheet" type="text/css" href="css/index-style.css" />
+
+    <!-- favicon.ico and apple-touch-icon.png? in root directory -->
+    <link rel="shortcut icon" href="images/favicon.ico" />
+
+    <!-- JS goes here if we want to load it during page load -->
+
+</head>
+
+<body id="main">
+    <div id="big-wrapper">
+        <!-- The Actual Header -->
+        <header id="big-header">
+            <img src="images/me.png" alt="cool logo" height="150" hspace="200" />
+            <h1>Isaiah Kingswulfe Lee</h1>
+        </header>
+
+        <!-- The Top Nav Bar and Login stuff-->
+        <br />
+        <div class="top-container">
+            <nav id="navbar">
+                <h2>Projects</h2>
+                <ul id="top-menu">
+                    <li><a href="goonspace.html" title="go directly to ludicrous speed">Jump to Plaid</a></li>
+                    <li><a href="old-html/info.html"
+                            title="The amount of info here may overload your browser. Proceed with caution.">Info
+                            Page</a></li>
+                    <li><a href="error_pages/404.html" title="forced error">404</a></li>
+                    <li><a href="translate.html" title="From Russia with love">Translate</a></li>
+                    <li><a href="old-html/game.html" title="The last game you'll ever play">Games</a></li>
+                </ul>
+            </nav>
+            <div id="loginform">
+                <form action="http://localhost/phptesting/submitfile.php" method="POST">
+                    <p>
+                        <label for="userlabel">Username: </label>
+                        <input type="text" name="username" autocomplete="off" size="15" maxlength="20" />
+                    </p>
+                    <p>
+                        <label for="passlabel">Password: </label>
+                        <input type="password" name="password" size="15" maxlength="20" />
+                    </p>
+                    <p>
+                        <label for="regbutton">
+                            <input type="button" value="register"
+                                onclick="window.location.href = 'login-stuff/register.html'" value="w3docs" />
+                        </label>
+                        <input type="submit" value="submit" onclick="playSound();" />
+                    </p>
+                </form>
+            </div>
+        </div>
+
+
+
+        <!-- THIS SECTION is for the eventual reactive side bar.-->
+        <br />
+
+        <div id="page-middle">
+            <aside id="my-aside" role="complementary">
+                <div class="text-center">
+                    <div class="my-face" style="background-image: url(images/deletthis.jpg);"></div>
+                    <h3 id="my-title">Isaiah Kingswulfe Lee</h1>
+                        <span class="my-subtext"><a href="isaiahklee0@gmail.com">isaiahklee0@gmail.com</a></span>
+                </div>
+                <nav id="my-aside-nav" role="navigation" class="navbar">
+                    <ul>
+                        <li class="active"><a href="#" data-nav-section="home">Home</a></li>
+                        <li><a href="#" data-nav-section="about">About</a></li>
+                        <li><a href="#" data-nav-section="education">Education</a></li>
+                        <li><a href="#" data-nav-section="projects">Projects</a></li>
+                        <li><a href="#" data-nav-section="skills">Skills</a></li>
+                        <li><a href="#" data-nav-section="contact">Contact</a></li>
+                    </ul>
+                </nav>
+            </aside>
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <!-- THE MEAT and potatoes of the pages content-->
+            <section id="main-section">
+
+                <form>
+                    <input type="button" value="DO NOT PRESS" onclick="playSound();checkFridge();" />
+                </form>
+
+
+
+                <div id="div-one">
+                    <a href="old-html/table.html" title="frenzied mumbled lyrics">wot ees this?</a>
+                </div>
+
+
+
+            </section>
+
+        </div>
+
+        <footer id="footer">
+            <p id="C4"><strong>Welcome to The Footer!</strong></p>
+            <span id="footer-copyright-text">
+                Copyright kingswulfe cpyYear()
+            </span>
+        </footer>
+    </div>
+    <!-- JS Goes here if it needs to be loaded after page-->
+    <script src="js/test1.js"></script>
+</body>
+
+</html>

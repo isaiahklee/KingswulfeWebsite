@@ -1,0 +1,17 @@
+*{
+    margin: 6px;
+    padding: 6px;
+    
+}
+body {
+    background-image: url("../js/worldmap/Parchment-Background.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+h1{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', 'Geneva', 'Verdana', 'sans-serif';
+    text-align: center;
+}

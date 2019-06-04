@@ -1,0 +1,12 @@
+body {
+    background-color: black;
+    color:red;
+    text-align: center;
+}
+#game-board {
+  display: inline-block;  
+    height:800px;
+    width:800px;
+    margin: 20px top;
+    border:10px solid yellow;
+}

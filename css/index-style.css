@@ -1,0 +1,157 @@
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+a{
+    font: Tahoma;
+    text-decoration: none;
+}
+body {
+    background-image: url("../images/StarfieldSimulation.gif");
+    background-color: #85DCB0;
+    background-blend-mode: multiply;
+    background-size: width height;
+    background-repeat: no-repeat;
+    color: ;
+    text-align: center;
+    width: 100%;
+    display: -webkit-box;
+    -webkit-box-pack: center;
+    -webkit-box-flex: 1;
+}
+h1 {
+    color: black;
+    font: bold 32px Tahoma;
+    text-align: center;
+    display: inline;
+}
+h2 {
+    font: bold 20px Tahoma;
+    margin: 10px;
+}
+h3 {
+    font: bold 20px Tahoma;
+}
+header, section, footer, aside, nav, article, hgroup{
+    display: block;
+}
+#big-wrapper{
+    background-color: rgba(98, 165, 132, .7);
+    background-blend-mode: multiply;
+    border: 3px solid #41B3A3;
+
+    -webkit-border-radius: 25px;
+
+    max-width: 1500px;
+    margin: 20px auto;
+    padding: 20px auto;
+    text-align: left;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-box-flex: 1;
+}
+#big-header {
+
+    text-align: center;
+    padding: 20px;
+}
+
+.top-container {
+    border: 3px solid #41B3A3;
+    height: 100px;
+    margin: 10px;
+    padding: 10px;
+    display: -webkit-box;
+    -webkit-box-orient: horizontal;
+    -webkit-box-flex: 1;
+    -webkit-border-radius: 25px;
+    -webkit-box-shadow:#41B3A3;
+    background: rgb(163, 96, 114);
+}
+#navbar {
+    -webkit-box-flex: 1;
+    width: 580px;
+    height:100px;
+}
+#top-menu li {
+    color: black;
+    background: white;
+    font: bold 14px Tahoma black;
+    display: inline-block;
+    list-style: none;
+    padding: 5px;
+    -webkit-transition: -webkit-transform 1s, -webkit-transform 1s, background 1s, color 1s;
+    -webkit-border-radius: 10px;
+    -webkit-box-shadow: rgba(110, 110, 110, .7);
+}
+#top-menu li:hover{
+    -webkit-transform: scale(1.5); 
+    -webkit-transform: translate(10px);
+    background: black;
+    color: white;
+}
+#loginform {
+    padding: 20px;
+    text-align: center;
+    -webkit-box-align: center;
+}
+#loginform form { display: table;      }
+#loginform p    { display: table-row;  }
+#loginform label { display: table-cell; }
+#loginform input { display: table-cell; }
+input[type=submit] {
+    border-radius: 5px;
+    border: 0;
+    width: 80px;
+    height:25px;
+    font-family: Tahoma;
+    background: #f4f4f4; 
+}
+input[value=register] {
+    border-radius: 5px;
+    border: 0;
+    width: 80px;
+    height:25px;
+    font-family: Tahoma;
+    background: #f4f4f4; 
+}
+    
+
+#page-middle {
+    display: -webkit-box;
+    -webkit-box-orient: horizontal;
+    -webkit-box-flex: 1;
+}
+#my-aside {
+    border: yellow 1px solid;
+    -webkit-box-flex: 1;
+    padding: 20px;
+    width: 50px;
+    text-align: center
+}
+#my-aside-nav li{
+    background: white;
+    font: bold 14px Tahoma black;
+    display: -moz-stack;
+    list-style: none;
+    padding: 5px;
+    -webkit-transition: -webkit-transform 1s;
+    -webkit-border-radius: 10px;
+    -webkit-box-shadow: rgba(110, 110, 110, .7);
+}
+#my-aside-nav li:hover{
+    -webkit-transform: scale(1.5); 
+    color:white;
+} 
+#main-section {
+    -webkit-box-flex: 1;
+    padding: 20px;
+    margin: 20px;
+    border: yellow 1px solid;
+}
+#footer{
+    text-align: center;
+    padding: 20px;
+
+}
