@@ -13,7 +13,7 @@ body {
     background-blend-mode: multiply;
     background-size: width height;
     background-repeat: no-repeat;
-    color: ;
+    
     text-align: center;
     width: 100%;
     display: -webkit-box;
@@ -41,7 +41,7 @@ header, section, footer, aside, nav, article, hgroup{
     background-blend-mode: multiply;
     border: 3px solid #41B3A3;
 
-    -webkit-border-radius: 25px;
+    border-radius: 25px;
 
     max-width: 1500px;
     margin: 20px auto;
@@ -65,8 +65,8 @@ header, section, footer, aside, nav, article, hgroup{
     display: -webkit-box;
     -webkit-box-orient: horizontal;
     -webkit-box-flex: 1;
-    -webkit-border-radius: 25px;
-    -webkit-box-shadow:#41B3A3;
+    border-radius: 25px;
+    box-shadow:#41B3A3;
     background: rgb(163, 96, 114);
 }
 #navbar {
@@ -81,13 +81,13 @@ header, section, footer, aside, nav, article, hgroup{
     display: inline-block;
     list-style: none;
     padding: 5px;
-    -webkit-transition: -webkit-transform 1s, -webkit-transform 1s, background 1s, color 1s;
-    -webkit-border-radius: 10px;
-    -webkit-box-shadow: rgba(110, 110, 110, .7);
+    transition: -webkit-transform 1s, -webkit-transform 1s, background 1s, color 1s;
+    border-radius: 10px;
+    box-shadow: rgba(110, 110, 110, .7);
 }
 #top-menu li:hover{
-    -webkit-transform: scale(1.5); 
-    -webkit-transform: translate(10px);
+    transform: scale(1.5); 
+    transform: translate(10px);
     background: black;
     color: white;
 }
@@ -136,12 +136,12 @@ input[value=register] {
     display: -moz-stack;
     list-style: none;
     padding: 5px;
-    -webkit-transition: -webkit-transform 1s;
-    -webkit-border-radius: 10px;
-    -webkit-box-shadow: rgba(110, 110, 110, .7);
+    transition: -webkit-transform 1s;
+    border-radius: 10px;
+    box-shadow: rgba(110, 110, 110, .7);
 }
 #my-aside-nav li:hover{
-    -webkit-transform: scale(1.5); 
+    transform: scale(1.5); 
     color:white;
 } 
 #main-section {
