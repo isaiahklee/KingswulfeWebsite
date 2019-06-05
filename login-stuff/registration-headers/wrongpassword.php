@@ -18,9 +18,7 @@
 
 <body>
     <div id="big-wrapper">
-        <p>Your email is invalid :(</p>
-        <a href="../register.html">try again</a>
-        <p>or</p>
+        <p>wrong password :(</p>
         <a href="../../index.html">back to index</a>
     </div>
 </body>

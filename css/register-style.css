@@ -1,0 +1,62 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body {
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    border-radius: 25px;
+    border: none;
+    background: url("../images/StarfieldSimulation.gif");
+    background-color: #85DCB0;
+    background-blend-mode: multiply;
+    background-position: center; 
+    background-size: 885px 705px;
+    background-repeat: no-repeat;
+    
+    text-align: center;
+    width: 100%;
+    display: -webkit-box;
+    -webkit-box-pack: center;
+    -webkit-box-flex: 1;
+}
+#big-wrapper{
+    background-color: rgba(98, 165, 132, .7);
+    background-blend-mode: multiply;
+    border: 3px solid #41B3A3;
+    border-radius: 20px;
+    
+
+    max-width: 1500px;
+    margin: 20px auto;
+    padding: 20px auto;
+    text-align: left;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-box-flex: 1;
+}
+#loginform {
+    padding: 20px;
+    text-align: center;
+    -webkit-box-align: center;
+}
+#loginform form { display: table;      }
+#loginform p    { display: table-row;  }
+#loginform label { display: table-cell; }
+#loginform input { display: table-cell; }
+input[type=submit] {
+    border-radius: 5px;
+    border: 0;
+    width: 80px;
+    height:25px;
+    font-family: Tahoma;
+    background: #f4f4f4; 
+}
+input[value=register] {
+    border-radius: 5px;
+    border: 0;
+    width: 80px;
+    height:25px;
+    font-family: Tahoma;
+    background: #f4f4f4; 
+}

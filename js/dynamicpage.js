@@ -3,7 +3,7 @@ $(function() {
 
     var newHash      = "",
         $mainContent = $("#main-section"),
-        $pageWrap    = $("#page-wrap"),
+        $pageWrap    = $("#main-section"),
         baseHeight   = 0,
         $el;
         
@@ -16,7 +16,7 @@ $(function() {
     });
     
     $(window).bind('hashchange', function(){
-    
+        
         newHash = window.location.hash.substring(1);
         
         if (newHash) {
@@ -30,11 +30,10 @@ $(function() {
                             });
                         });
                         $("nav a").removeClass("current");
-                        $("nav a[href="+newHash+"]").addClass("current");
+                        $("nav a[href=\""+newHash+"\"]").addClass("current");
                     });
                 });
         };
-        
     });
     
     $(window).trigger('hashchange');

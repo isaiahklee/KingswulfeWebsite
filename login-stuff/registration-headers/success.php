@@ -4,20 +4,23 @@
 <head>
     <meta charset="utf-8" />
 
-    <title>Isaiah Kingswulfe Lee</title>
+    <title>Success!</title>
 
     <!-- css stylesheet\s location\s -->
-    <link rel="stylesheet" type="text/css" href="css/index-style.css" />
+    <link rel="stylesheet" type="text/css" href="../../css/register-style.css" />
 
     <!-- favicon.ico and apple-touch-icon.png? in root directory -->
-    <link rel="shortcut icon" href="images/favicon.ico" />
+    <link rel="shortcut icon" href="../images/favicon.ico" />
 
     <!-- JS goes here if we want to load it during page load -->
 
 </head>
 
 <body>
-    <p>success</p>
+    <div id="big-wrapper">
+        <p>YOU DID IT!</p>
+        <a href="../../index.html">back to index</a>
+    </div>
 </body>
 
 </html>
