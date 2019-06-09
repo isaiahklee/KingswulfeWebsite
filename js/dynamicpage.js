@@ -6,7 +6,7 @@ $(function() {
         $pageWrap    = $("#main-section"),
         baseHeight   = 0,
         $el;
-        
+    
     $pageWrap.height($pageWrap.height());
     baseHeight = $pageWrap.height() - $mainContent.height();
     
