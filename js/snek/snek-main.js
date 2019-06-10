@@ -97,7 +97,7 @@ function dideat(){
     for(let i = 0; i < foodarray.length; i++){
         if(foodarray[i].x == snek.bodynodes[0].x && foodarray[i].y == snek.bodynodes[0].y){
             snek.add();
-            console.log("et fud");
+            //console.log("et fud");
             delete foodarray[i];
         }
     }
@@ -105,10 +105,12 @@ function dideat(){
 
 function makefood(){
     //console.log(foodarray);
-    console.log(foodarray.length);
-    if(foodarray.length < totalfood){
-        while(foodarray.length < totalfood){
-            foodarray.push(new food(parseInt(Math.random()*boardsize), parseInt(Math.random()*boardsize)));
+    //console.log(foodarray.length);
+    //make this work if any elements are null?
+    for(let i = 0; i < totalfood; i++){
+        if(foodarray[i] == null){
+                foodarray[i] = new food(parseInt(Math.random()*boardsize), parseInt(Math.random()*boardsize));
+                //console.log(foodarray[i]);
         }
     }
     for(let i = 0; i < foodarray.length; i++){
