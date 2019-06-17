@@ -22,18 +22,19 @@
         In this context, an unusual word is defined to be not in the top 10'000 as determined by n-gram frequency
         analysis of the Google's Trillion Word Corpus.
     </h1>
-    <div id="text-box-div">
+    <div id="text-boxes">
         <form>
             URL to scrape: <input type="text" size="60">
-            <button type="submit">Submit</button>
+            <button type="submit" onclick="runtest()">Submit</button>
         </form>
         <br />
         <form>
             Unusual Words:
             <br />
-            <textarea readonly id="transText2" rows="10" cols="60"></textarea>
+            <textarea readonly id="unusualtext" rows="10" cols="60"></textarea>
         </form>
     </div>
+    <script src="js/unusualwords.js"></script>
 </body>
 
 </html>
