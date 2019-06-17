@@ -1,0 +1,46 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+a{
+    font: Tahoma;
+    text-decoration: none;
+}
+body {
+    background-color: grey;
+}
+header, section, footer, aside, nav, article, hgroup{
+    display: block;
+}
+#big-wrapper{
+    background-color: rgba(98, 165, 132, .7);
+}
+
+
+
+nav ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 100px;
+    overflow: hidden;
+    background-color: #41B3A3;
+}
+nav ul li {
+    float: left;
+}
+nav ul li a{
+    display: block;
+    color: #000;
+    padding: 8px 16px;
+    text-align: center;
+    text-decoration: none;
+}
+nav ul li a.active {
+    background-color: #4CAF50;
+    color: white;
+}
+nav ul li a:hover:not(.active) {
+    background-color: #555;
+    color: white;
+}
