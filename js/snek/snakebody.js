@@ -1,18 +1,18 @@
+//class for each node of the snakes body
 class bodynode{
     constructor(x, y){
         this.x = x;
         this.y = y;
-        
     }
 }
-
+//class for a particle of food
 class food{
     constructor(x, y){
         this.x = x;
         this.y = y;
     }
 }
-
+//class that keeps track of all food, bodynodes, and their position and interaction on the board
 class snakebody{
     constructor(x, y, brdsize){
         this.brdsize = brdsize;
@@ -37,8 +37,6 @@ class snakebody{
                 return 2;
             }
         }
-        
-
         //new head
         let newhead = new bodynode((this.bodynodes[0].x + x), (this.bodynodes[0].y + y));
         //move the head by removing tail, and adding new head.
