@@ -1,6 +1,5 @@
 let canvasH = 800;
 let canvasW = 800;
-let board = [];
 let boardsize = 20;
 let scale = canvasH/boardsize;
 let snek;
@@ -11,21 +10,13 @@ let foodarray = [];
 let pause = true;
 
 //TODO
-//spawn food in clear spaces
 //success on end game
 //fail when hit own body.
-
 
 function setup(){
     //noCursor();
     frameRate(framerate);
     createCanvas(canvasW, canvasH);
-
-    //create board
-    for(let i = 0; i < boardsize; i++){
-        let subboard = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
-        board.push(subboard);
-    }
 
     //instantiate snake
     snek = new snakebody(boardsize/2, boardsize/2, boardsize);
@@ -164,7 +155,6 @@ function makefood(){
                         newY = parseInt(Math.random()*boardsize); 
                     }
                     foodarray[i] = new food(newX, newY);
-                    console.log(board);
                 }
             }
         }
