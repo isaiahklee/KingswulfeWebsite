@@ -22,12 +22,12 @@ nav ul{
     list-style-type: none;
     margin: 0;
     padding: 0;
-    width: 100px;
     overflow: hidden;
     background-color: #41B3A3;
 }
 nav ul li {
     float: left;
+    border-right: 1px solid black;
 }
 nav ul li a{
     display: block;
@@ -36,11 +36,11 @@ nav ul li a{
     text-align: center;
     text-decoration: none;
 }
-nav ul li a.active {
-    background-color: #4CAF50;
-    color: white;
-}
 nav ul li a:hover:not(.active) {
     background-color: #555;
+    color: white;
+}
+.active {
+    background-color: rgb(26, 102, 92);
     color: white;
 }
