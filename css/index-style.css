@@ -12,7 +12,7 @@ body {
     border-radius: 25px;
     border: none;
     background: url("../images/StarfieldSimulation.gif");
-    background-color: #85DCB0;
+    background-color: #41B3A3;
     background-blend-mode: multiply;
     background-position: center; 
     background-size: 885px 705px;
@@ -43,9 +43,7 @@ header, section, footer, aside, nav, article, hgroup{
 #big-wrapper{
     background-color: rgba(98, 165, 132, .7);
     background-blend-mode: multiply;
-    border: 3px solid #41B3A3;
-
-    
+    border: 3px solid rgb(36, 146, 122);
 
     max-width: 1500px;
     margin: 20px auto;
@@ -55,14 +53,14 @@ header, section, footer, aside, nav, article, hgroup{
     -webkit-box-orient: vertical;
     -webkit-box-flex: 1;
 }
-#big-header {
 
+#big-header {
     text-align: center;
     padding: 20px;
 }
 
 .top-container {
-    border: 3px solid #41B3A3;
+    border: 3px solid rgb(36, 146, 122);
     height: 100px;
     margin: 10px;
     padding: 10px;
@@ -85,17 +83,22 @@ header, section, footer, aside, nav, article, hgroup{
     font: bold 14px Tahoma black;
     display: inline-block;
     list-style: none;
-    padding: 5px;
-    transition: -webkit-transform 1s, -webkit-transform 1s, background 1s, color 1s;
+    transition: -webkit-transform .3s;
     border-radius: 10px;
     box-shadow: rgba(110, 110, 110, .7);
 }
 #top-menu li:hover{
-    transform: scale(1.5); 
-    transform: translate(10px);
-    background: black;
-    color: white;
+    transform: translate(0px, 5px);
 }
+#top-menu li a{
+    display: block;
+    padding: 5px;
+    text-decoration: none;
+    color: black;
+}
+
+
+
 #loginform {
     padding: 20px;
     text-align: center;
@@ -123,6 +126,7 @@ input[value=register] {
 }
     
 
+
 #page-middle {
     display: -webkit-box;
     -webkit-box-orient: horizontal;
@@ -133,22 +137,34 @@ input[value=register] {
     -webkit-box-flex: 1;
     padding: 20px;
     width: 50px;
-    text-align: center
+    text-align: center;
+}
+#my-aside-nav ul{
+    list-style-type: none;
 }
 #my-aside-nav li{
     background: white;
     font: bold 14px Tahoma black;
     display: -moz-stack;
     list-style: none;
-    padding: 5px;
-    transition: -webkit-transform 1s;
+    
+    transition: -webkit-transform .3s;
     border-radius: 10px;
     box-shadow: rgba(110, 110, 110, .7);
 }
 #my-aside-nav li:hover{
-    transform: scale(1.5); 
+    transform: scale(1.2); 
     color:white;
 } 
+#my-aside-nav a{
+    text-decoration: none;
+    color: black;
+    display: block;
+    padding: 5px;
+}
+
+
+
 #main-section {
     -webkit-box-flex: 1;
     padding: 20px;
@@ -161,5 +177,4 @@ input[value=register] {
     position: s;
     bottom: 0;
     width: 100%;
-
 }
