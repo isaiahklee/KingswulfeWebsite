@@ -5,7 +5,7 @@ let scale = canvasH/boardsize;
 let snek;
 let framerate = 4;
 let inertia = 0;
-let totalfood = 390;
+let totalfood = 6;
 let foodarray = [];
 let pause = true;
 
