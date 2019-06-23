@@ -37,6 +37,13 @@ class snakebody{
                 return 2;
             }
         }
+        //check head doesn't intersect with body
+        for(let i = 2; i < this.bodynodes.length; i++){
+            if(this.bodynodes[i].x == this.bodynodes[0].x + x && this.bodynodes[i].y == this.bodynodes[0].y + y){
+                return -1;
+            }
+        }
+
         //new head
         let newhead = new bodynode((this.bodynodes[0].x + x), (this.bodynodes[0].y + y));
         //move the head by removing tail, and adding new head.

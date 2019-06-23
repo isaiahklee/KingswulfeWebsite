@@ -5,13 +5,9 @@ let scale = canvasH/boardsize;
 let snek;
 let framerate = 4;
 let inertia = 0;
-let totalfood = 300;
+let totalfood = 390;
 let foodarray = [];
 let pause = true;
-
-//TODO
-//success on end game
-//fail when hit own body.
 
 function setup(){
     //noCursor();
@@ -27,7 +23,6 @@ function setup(){
     textAlign(CENTER);
     text("PRESS any key to start", canvasH/2, canvasW/2);
     
-
 }
 
 function updateBoard(){
@@ -158,6 +153,7 @@ function makefood(){
                 }
             }
         }
+    let count = 0;
     for(let i = 0; i < foodarray.length; i++){
         if(foodarray[i] != null){
             push();
@@ -166,28 +162,47 @@ function makefood(){
             ellipse(foodarray[i].x*(canvasH/boardsize)+20, foodarray[i].y*(canvasH/boardsize)+20, 25, 25);
             pop();
             //console.log(foodarray[i]);
+        }else{
+            count++;
         }
+    }
+    
+    if(count == foodarray.length){
+        noLoop();
+        gameend(true);
     }
 }
 
 function gameend(bool){
+    console.log("gameend called with: " + bool);
     textSize(32);
     if(bool){
         textAlign(CENTER);
         text("YOU WIN", canvasH/2, canvasW/2);
-    }
-    textAlign(CENTER);
-    text("YOU LOST", canvasH/2, canvasW/2);
-    snek.reset();
-    pause = true;
-    noLoop();
-    //reset the game by recalling setup after 3 seconds of you lost screen
-    sleep(3000).then(() => {
-        // Do something after the sleep!
-        setup();
-        loop();
-    });    
+        snek.reset();
+        pause = true;
+        noLoop();
+        //reset the game by recalling setup after 3 seconds of you lost screen
+        sleep(10000).then(() => {
+            // Do something after the sleep!
+            setup();
+            loop();
+        });  
+    }else{
+        textAlign(CENTER);
+        text("YOU LOST", canvasH/2, canvasW/2);
+        snek.reset();
+        pause = true;
+        noLoop();
+        //reset the game by recalling setup after 3 seconds of you lost screen
+        sleep(3000).then(() => {
+            // Do something after the sleep!
+            setup();
+            loop();
+        });   
+    } 
 }
+
 function sleep(ms) {
     return new Promise(resolve => setTimeout(resolve, ms));
 }
