@@ -1,0 +1,85 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+a{
+    font: Tahoma;
+    text-decoration: none;
+}
+body {
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    border-radius: 25px;
+    border: none;
+    background: url("../images/StarfieldSimulation.gif");
+    background-color: #41B3A3;
+    background-blend-mode: multiply;
+    background-position: center; 
+    background-size: 885px 705px;
+    background-repeat: no-repeat;
+    
+    text-align: center;
+    width: 100%;
+    display: -webkit-box;
+    -webkit-box-pack: center;
+    -webkit-box-flex: 1;
+}
+h1 {
+    color: black;
+    font: bold 32px Tahoma;
+    text-align: center;
+    display: inline;
+}
+h2 {
+    font: bold 20px Tahoma;
+    margin: 10px;
+}
+h3 {
+    font: bold 20px Tahoma;
+}
+header, section, footer, aside, nav, article, hgroup{
+    display: block;
+}
+#big-wrapper{
+    background-color: rgba(98, 165, 132, .7);
+    background-blend-mode: multiply;
+    border: 3px solid rgb(36, 146, 122);
+
+    max-width: 1500px;
+    margin: 20px auto;
+    padding: 20px auto;
+    text-align: left;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-box-flex: 1;
+}
+
+#big-header {
+    text-align: center;
+    padding: 20px;
+}
+
+@import "nav-style";
+
+@import "login-style";
+
+#page-middle {
+    display: -webkit-box;
+    -webkit-box-orient: horizontal;
+    -webkit-box-flex: 1;
+
+@import "index-aside";
+
+#main-section {
+    -webkit-box-flex: 1;
+    padding: 20px;
+    margin: 20px;
+    border: yellow 1px solid;
+}
+#footer{
+    text-align: center;
+    padding: 20px;
+    position: s;
+    bottom: 0;
+    width: 100%;
+}

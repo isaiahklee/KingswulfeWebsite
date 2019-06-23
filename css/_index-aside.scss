@@ -1,0 +1,31 @@
+
+#my-aside {
+    border: yellow 1px solid;
+    -webkit-box-flex: 1;
+    padding: 20px;
+    width: 50px;
+    text-align: center;
+}
+#my-aside-nav ul{
+    list-style-type: none;
+}
+#my-aside-nav li{
+    background: white;
+    font: bold 14px Tahoma black;
+    display: -moz-stack;
+    list-style: none;
+    
+    transition: -webkit-transform .3s;
+    border-radius: 10px;
+    box-shadow: rgba(110, 110, 110, .7);
+}
+#my-aside-nav li:hover{
+    transform: scale(1.2); 
+    color:white;
+} 
+#my-aside-nav a{
+    text-decoration: none;
+    color: black;
+    display: block;
+    padding: 5px;
+}
