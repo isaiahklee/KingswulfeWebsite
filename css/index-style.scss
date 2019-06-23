@@ -1,28 +1,17 @@
-*{
-    margin: 0px;
-    padding: 0px;
-}
-a{
-    font: Tahoma;
-    text-decoration: none;
-}
+@import 'initials';
+
 body {
-    -webkit-border-radius: 25px;
-    -moz-border-radius: 25px;
-    border-radius: 25px;
+    font-family: Arial;
     border: none;
-    background: url("../images/StarfieldSimulation.gif");
-    background-color: #41B3A3;
-    background-blend-mode: multiply;
+    background-color: $bg-color;
     background-position: center; 
-    background-size: 885px 705px;
+    background-size: auto;
     background-repeat: no-repeat;
     
     text-align: center;
-    width: 100%;
-    display: -webkit-box;
-    -webkit-box-pack: center;
-    -webkit-box-flex: 1;
+    width: auto;
+    padding: 20px;
+    display: flex;
 }
 h1 {
     color: black;
@@ -32,31 +21,25 @@ h1 {
 }
 h2 {
     font: bold 20px Tahoma;
-    margin: 10px;
+    margin: 5px;
 }
 h3 {
     font: bold 20px Tahoma;
-}
-header, section, footer, aside, nav, article, hgroup{
-    display: block;
 }
 #big-wrapper{
     background-color: rgba(98, 165, 132, .7);
     background-blend-mode: multiply;
     border: 3px solid rgb(36, 146, 122);
 
-    max-width: 1500px;
     margin: 20px auto;
     padding: 20px auto;
     text-align: left;
-    display: -webkit-box;
-    -webkit-box-orient: vertical;
-    -webkit-box-flex: 1;
 }
 
 #big-header {
     text-align: center;
     padding: 20px;
+    display: flex;
 }
 
 @import "nav-style";
@@ -64,14 +47,15 @@ header, section, footer, aside, nav, article, hgroup{
 @import "login-style";
 
 #page-middle {
-    display: -webkit-box;
-    -webkit-box-orient: horizontal;
-    -webkit-box-flex: 1;
+    display: flex;
+    flex-direction: row;
+    flex-grow: 2;
+}
 
 @import "index-aside";
 
 #main-section {
-    -webkit-box-flex: 1;
+    flex: 1;
     padding: 20px;
     margin: 20px;
     border: yellow 1px solid;

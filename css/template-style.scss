@@ -1,26 +1,4 @@
-$bg-color: rgb(37, 146, 132);
-$txt-color: black;
-
-
-*{
-    margin: 0px;
-    padding: 0px;
-}
-a{
-    font: Tahoma;
-    text-decoration: none;
-}
-body {
-    background-color: $bg-color;
-}
-header, section, footer, aside, nav, article, hgroup{
-    display: block;
-}
-#big-wrapper{
-    background-color: rgba(98, 165, 132, .7);
-}
-
-
+@import 'initials';
 
 nav ul{
     list-style-type: none;

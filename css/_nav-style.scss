@@ -3,18 +3,19 @@
     height: 100px;
     margin: 10px;
     padding: 10px;
-    display: -webkit-box;
-    -webkit-box-orient: horizontal;
-    -webkit-box-flex: 1;
+    display: flex;
+    flex-direction: horizontal;
     border-radius: 25px;
     box-shadow:#41B3A3;
     background: rgb(163, 96, 114);
 }
 #navbar {
-    -webkit-box-flex: 1;
-    width: 580px;
+    flex: 1;
+    min-width: 580px;
     height:100px;
-    display: block;
+    display: flex;
+    justify-content: left;
+    align-items: flex-start;
 }
 #top-menu li {
     color: black;
@@ -22,7 +23,7 @@
     font: bold 14px Tahoma black;
     display: inline-block;
     list-style: none;
-    transition: -webkit-transform .3s;
+    transition: transform .3s;
     border-radius: 10px;
     box-shadow: rgba(110, 110, 110, .7);
 }

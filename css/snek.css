@@ -1,57 +1,74 @@
 body {
-    background-color: rgb(37, 146, 132);
-    color:black;
-    text-align: center;
-    padding: 20px;
+  background-color: #259284;
+  color: black;
+  text-align: center;
+  padding: 20px;
 }
+
 #game-board {
-    display: inline-block;  
-    height:800px;
-    width:800px;
-    margin: 20px top;
-    border:10px solid yellow;
+  display: inline-block;
+  height: 800px;
+  width: 800px;
+  margin: 20px top;
+  border: 10px solid yellow;
 }
+
 #big-header {
-    display: inline;
-    text-align: center;
+  display: inline;
+  text-align: center;
 }
 
 .top-container {
-    border: 3px solid rgb(36, 146, 122);
-    height: 100px;
-    margin: 10px;
-    padding: 10px;
-    display: flex;
-    flex-direction: horizontal;
-    flex:9;
-    flex: 1;
-    border-radius: 25px;
-    box-shadow:#41B3A3;
-    background: rgb(163, 96, 114);
-    border: 1px solid yellow;
-}
-#navbar {
-    -webkit-box-flex: 1;
-    border: 1px solid yellow;
-}
-#top-menu{
+  border: 3px solid #24927a;
+  height: 100px;
+  margin: 10px;
+  padding: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: horizontal;
+          flex-direction: horizontal;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 25px;
+  -webkit-box-shadow: #41B3A3;
+          box-shadow: #41B3A3;
+  background: #a36072;
   border: 1px solid yellow;
 }
+
+#navbar {
+  -webkit-box-flex: 1;
+  border: 1px solid yellow;
+}
+
+#top-menu {
+  border: 1px solid yellow;
+}
+
 #top-menu li {
-    background: white;
-    font: bold 14px Tahoma black;
-    display: inline-block;
-    list-style: none;
-    transition: -webkit-transform .3s;
-    border-radius: 10px;
-    box-shadow: rgba(110, 110, 110, .7);
+  background: white;
+  font: bold 14px Tahoma black;
+  display: inline-block;
+  list-style: none;
+  transition: -webkit-transform .3s;
+  border-radius: 10px;
+  -webkit-box-shadow: rgba(110, 110, 110, 0.7);
+          box-shadow: rgba(110, 110, 110, 0.7);
 }
-#top-menu li:hover{
-    transform: translate(0px, -5px);
+
+#top-menu li:hover {
+  -webkit-transform: translate(0px, -5px);
+          transform: translate(0px, -5px);
 }
-#top-menu li a{
-    text-decoration: none;
-    color: black;
-    padding: 5px;
-    display: block;
+
+#top-menu li a {
+  text-decoration: none;
+  color: black;
+  padding: 5px;
+  display: block;
 }
+/*# sourceMappingURL=snek.css.map */

@@ -1,13 +1,14 @@
 
 #my-aside {
     border: yellow 1px solid;
-    -webkit-box-flex: 1;
+    flex-grow: 1;
     padding: 20px;
-    width: 50px;
+    max-width: 240px;
     text-align: center;
 }
 #my-aside-nav ul{
     list-style-type: none;
+    padding: 1px;
 }
 #my-aside-nav li{
     background: white;
@@ -15,7 +16,7 @@
     display: -moz-stack;
     list-style: none;
     
-    transition: -webkit-transform .3s;
+    transition: transform .3s;
     border-radius: 10px;
     box-shadow: rgba(110, 110, 110, .7);
 }

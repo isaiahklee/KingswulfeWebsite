@@ -8,20 +8,29 @@ a {
   text-decoration: none;
 }
 
+header, section, footer, aside, nav, article, hgroup {
+  display: block;
+}
+
+#big-wrapper {
+  width: 100%;
+  margin: 20px;
+  padding: 20px;
+}
+
 body {
-  border-radius: 25px;
+  font-family: Arial;
   border: none;
-  background: url("../images/StarfieldSimulation.gif");
-  background-color: #41B3A3;
-  background-blend-mode: multiply;
+  background-color: #259284;
   background-position: center;
-  background-size: 885px 705px;
+  background-size: auto;
   background-repeat: no-repeat;
   text-align: center;
-  width: 100%;
+  width: auto;
+  padding: 20px;
   display: -webkit-box;
-  -webkit-box-pack: center;
-  -webkit-box-flex: 1;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 h1 {
@@ -33,33 +42,28 @@ h1 {
 
 h2 {
   font: bold 20px Tahoma;
-  margin: 10px;
+  margin: 5px;
 }
 
 h3 {
   font: bold 20px Tahoma;
 }
 
-header, section, footer, aside, nav, article, hgroup {
-  display: block;
-}
-
 #big-wrapper {
   background-color: rgba(98, 165, 132, 0.7);
   background-blend-mode: multiply;
   border: 3px solid #24927a;
-  max-width: 1500px;
   margin: 20px auto;
   padding: 20px auto;
   text-align: left;
-  display: -webkit-box;
-  -webkit-box-orient: vertical;
-  -webkit-box-flex: 1;
 }
 
 #big-header {
   text-align: center;
   padding: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .top-container {
@@ -68,8 +72,12 @@ header, section, footer, aside, nav, article, hgroup {
   margin: 10px;
   padding: 10px;
   display: -webkit-box;
-  -webkit-box-orient: horizontal;
-  -webkit-box-flex: 1;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: horizontal;
+          flex-direction: horizontal;
   border-radius: 25px;
   -webkit-box-shadow: #41B3A3;
           box-shadow: #41B3A3;
@@ -78,9 +86,19 @@ header, section, footer, aside, nav, article, hgroup {
 
 #navbar {
   -webkit-box-flex: 1;
-  width: 580px;
+      -ms-flex: 1;
+          flex: 1;
+  min-width: 580px;
   height: 100px;
-  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
 }
 
 #top-menu li {
@@ -89,7 +107,10 @@ header, section, footer, aside, nav, article, hgroup {
   font: bold 14px Tahoma black;
   display: inline-block;
   list-style: none;
+  -webkit-transition: -webkit-transform .3s;
   transition: -webkit-transform .3s;
+  transition: transform .3s;
+  transition: transform .3s, -webkit-transform .3s;
   border-radius: 10px;
   -webkit-box-shadow: rgba(110, 110, 110, 0.7);
           box-shadow: rgba(110, 110, 110, 0.7);
@@ -108,9 +129,12 @@ header, section, footer, aside, nav, article, hgroup {
 }
 
 #loginform {
+  border: solid yellow 1px;
   padding: 20px;
   text-align: center;
-  -webkit-box-align: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
 }
 
 #loginform form {
@@ -127,42 +151,62 @@ header, section, footer, aside, nav, article, hgroup {
 
 #loginform input {
   display: table-cell;
+  margin: 2px;
 }
 
-input[type=submit] {
+#login-buttons {
+  display: table-row;
+}
+
+#loginform input[type=text], #loginform input[type=password] {
+  border: 0;
+  background: white;
+  display: block;
+  text-align: center;
+  border: 1px solid #24927a;
+  border-radius: 24px;
+  padding: 4px 12px;
+  width: 100px;
+  outline: none;
+  color: black;
+}
+
+input[type=submit],
+input[value=Register] {
   border-radius: 5px;
   border: 0;
   width: 80px;
   height: 25px;
   font-family: Tahoma;
-  background: #f4f4f4;
-}
-
-input[value=register] {
-  border-radius: 5px;
-  border: 0;
-  width: 80px;
-  height: 25px;
-  font-family: Tahoma;
-  background: #f4f4f4;
+  background: white;
 }
 
 #page-middle {
   display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-orient: horizontal;
-  -webkit-box-flex: 1;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-flex: 2;
+      -ms-flex-positive: 2;
+          flex-grow: 2;
 }
 
 #my-aside {
   border: yellow 1px solid;
   -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
   padding: 20px;
-  width: 50px;
+  max-width: 240px;
   text-align: center;
 }
 
 #my-aside-nav ul {
   list-style-type: none;
+  padding: 1px;
 }
 
 #my-aside-nav li {
@@ -170,7 +214,10 @@ input[value=register] {
   font: bold 14px Tahoma black;
   display: -moz-stack;
   list-style: none;
+  -webkit-transition: -webkit-transform .3s;
   transition: -webkit-transform .3s;
+  transition: transform .3s;
+  transition: transform .3s, -webkit-transform .3s;
   border-radius: 10px;
   -webkit-box-shadow: rgba(110, 110, 110, 0.7);
           box-shadow: rgba(110, 110, 110, 0.7);
@@ -191,6 +238,8 @@ input[value=register] {
 
 #main-section {
   -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
   padding: 20px;
   margin: 20px;
   border: yellow 1px solid;
