@@ -1,31 +1,31 @@
 .top-container {
     border: 3px solid rgb(36, 146, 122);
-    height: 100px;
-    margin: 10px;
+    height: auto;
+    
     padding: 10px;
     display: flex;
     flex-direction: horizontal;
-    border-radius: 25px;
+    
     box-shadow:#41B3A3;
     background: rgb(163, 96, 114);
 }
 #navbar {
     flex: 1;
-    min-width: 580px;
-    height:100px;
+    height:auto;
     display: flex;
     justify-content: left;
-    align-items: flex-start;
+    align-items: center;
 }
+
 #top-menu li {
     color: black;
-    background: white;
+    //background: white;
     font: bold 14px Tahoma black;
     display: inline-block;
     list-style: none;
     transition: transform .3s;
-    border-radius: 10px;
-    box-shadow: rgba(110, 110, 110, .7);
+    border-right: 1px solid black;
+    //box-shadow: rgba(110, 110, 110, .7);
 }
 #top-menu li:hover{
     transform: translate(0px, 5px);

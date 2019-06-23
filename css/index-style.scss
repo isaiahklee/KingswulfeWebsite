@@ -27,19 +27,31 @@ h3 {
     font: bold 20px Tahoma;
 }
 #big-wrapper{
+    //border: yellow 1px solid;
     background-color: rgba(98, 165, 132, .7);
     background-blend-mode: multiply;
-    border: 3px solid rgb(36, 146, 122);
+    //border: 3px solid rgb(36, 146, 122);
 
-    margin: 20px auto;
-    padding: 20px auto;
+    margin:0px;
+    padding: 20px left right bottom;
     text-align: left;
 }
 
 #big-header {
+    //border: yellow 1px solid;
     text-align: center;
-    padding: 20px;
     display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    
+}
+#logo-and-text{
+    display: flex;
+    //border: solid yellow 1px;
+    text-align: left;
+}
+#header-text{
+    padding: 8px;
 }
 
 @import "nav-style";
@@ -58,7 +70,7 @@ h3 {
     flex: 1;
     padding: 20px;
     margin: 20px;
-    border: yellow 1px solid;
+    //border: yellow 1px solid;
 }
 #footer{
     text-align: center;
