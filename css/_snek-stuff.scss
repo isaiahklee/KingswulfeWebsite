@@ -1,0 +1,20 @@
+body {
+    font-family: Arial;
+    border: none;
+    background-color: $bg-color;
+    background-position: center; 
+    background-size: auto;
+    background-repeat: no-repeat;
+
+
+    color:black;
+    text-align: center;
+    padding: 20px;
+}
+#game-board {
+    display: flex;  
+    height:800px;
+    width:800px;
+    margin: 20px top;
+    border:10px solid yellow;
+}

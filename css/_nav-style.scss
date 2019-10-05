@@ -1,24 +1,40 @@
 .top-container {
     border: 3px solid rgb(36, 146, 122);
+    border: black 1px solid;
     height: auto;
-    
+    color: white;
+
     padding: 10px;
     display: flex;
     flex-direction: horizontal;
     
     box-shadow:#41B3A3;
     background: rgb(163, 96, 114);
+
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
 }
 #navbar {
+    
+    color: white;
     flex: 1;
     height:auto;
     display: flex;
     justify-content: left;
     align-items: center;
+    
+}
+
+nav h2{
+    font-size: 24px;
+    padding-right: 15px;
+    border-right: 1px solid black;
+    margin-right: 5px;
 }
 
 #top-menu li {
-    color: black;
+    color: white;
+    padding-right: 5px;
     //background: white;
     font: bold 14px Tahoma black;
     display: inline-block;
@@ -34,5 +50,5 @@
     display: block;
     padding: 5px;
     text-decoration: none;
-    color: black;
+    color: white;
 }

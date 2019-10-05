@@ -17,27 +17,35 @@
 </head>
 
 <body>
-    <div id="big-wrapper">
-        <div id="loginform">
-            <form action="http://localhost/phptesting/registeruser.php" method="POST">
-                <p>
-                    <label for="emaillabel">Email: </label>
-                    <input type="text" name="email" autocomplete="off" size="15" maxlength="40" />
-                </p>
-                <p>
-                    <label for="userlabel">Desired Username: </label>
-                    <input type="text" name="username" autocomplete="off" size="15" maxlength="20" />
-                </p>
-                <p>
-                    <label for="passlabel">Desired Password: </label>
-                    <input type="password" name="password" size="15" maxlength="20" />
-                </p>
-                <p>
-                    <label for="passlabel2">Confirm Password: </label>
-                    <input type="password" name="password2" size="15" maxlength="20" />
-                </p>
-                <input type="submit" value="register" onclick="playSound();" />
-            </form>
+    <div id="background-wrapper">
+        <img src="../images/StarfieldSimulation.gif" alt="StarfieldSimulation" />
+        <div id="big-wrapper">
+            <div id="loginform">
+                <form action="http://localhost/phptesting/registeruser.php" method="POST">
+                    <p>
+                        <label for="emaillabel">Email: </label>
+                        <input type="text" name="email" autocomplete="off" size="15" maxlength="40" />
+                    </p>
+                    <p>
+                        <label for="userlabel">Desired Username: </label>
+                        <input type="text" name="username" autocomplete="off" size="15" maxlength="20" />
+                    </p>
+                    <p>
+                        <label for="passlabel">Desired Password: </label>
+                        <input type="password" name="password" size="15" maxlength="20" />
+                    </p>
+                    <p>
+                        <label for="passlabel2">Confirm Password: </label>
+                        <input type="password" name="password2" size="15" maxlength="20" />
+                    </p>
+                    <p>
+                        <label><input type="submit" value="Register" onclick="playSound();" />
+                        </label>
+                        <input type="button" value="Back to Homepage"
+                            onclick="window.location.href = '../index.php';" />
+                    </p>
+                </form>
+            </div>
         </div>
     </div>
 </body>

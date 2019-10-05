@@ -4,38 +4,99 @@
 <head>
     <meta charset="utf-8" />
 
-    <title>Isaiah's Info</title>
+    <title>Wii, would like to play</title>
 
-    <link rel="stylesheet" type="text/css" href="../css/style.css" />
+    <link rel="stylesheet" type="text/css" href="../css/index-style.css" />
 
     <!-- favicon.ico and apple-touch-icon.png? in root directory -->
     <link rel="shortcut icon" href="favicon.ico" />
 </head>
 
 <body>
-    <section>
-        <p>Welcome to Fun</p>
-        <a href="../js-games/snek.html">Click for snek game</a>
-        <br />
-        <a href="../js-games/ray.html">Click for ray stroke</a>
-        <form name="playForm">
-            Wants to Play <input type="checkbox" name="wantsToPlay" />
-            <br />
-            <input type="button" value="PLAY" onclick="boxAuth();" />
-        </form>
-    </section>
-    <p>COllect THat MoneY</p>
-    <section id="top-drag">
-        <p>The Ground</p>
-        <img src="../images/coin.jpg" class="picture">
-        <img src="../images/coin.jpg" class="picture">
-        <img src="../images/coin.jpg" class="picture">
-    </section>
-    <section id="bot-drag">
-        <p>Your Pocket</p>
-    </section>
 
+    <div id="big-wrapper">
+        <!-- The Actual Header -->
+        <header id="big-header">
+            <div id="logo-and-text">
+                <img src="../images/me.png" alt="cool logo" height="75" hspace="100" />
+                <div id="header-text">
+                    <h1>Isaiah Kingswulfe Lee</h1>
+                    <p>Programmer, Artist, Creator</p>
+                </div>
+            </div>
+            <div id="loginform">
+                <form action="http://localhost/phptesting/submitfile.php" method="POST">
+                    <p>
+                        <label for="userlabel">Username: </label>
+                        <input type="text" name="username" autocomplete="off" size="15" maxlength="20" />
+                    </p>
+                    <p>
+                        <label for="passlabel">Password: </label>
+                        <input type="password" name="password" size="15" maxlength="20" />
+                    </p>
+                    <div id="login-buttons">
+                        <input type="submit" value="Log In" onclick="playSound();" />
+                        or
+                        <label for="regbutton">
+                            <input type="button" value="Register"
+                                onclick="window.location.href = 'login-stuff/register.html'" value="w3docs" />
+                        </label>
+                        if you don't have an account
+                    </div>
+                </form>
+            </div>
+        </header>
+
+        <!-- The Top Nav Bar and Login stuff-->
+        <br />
+        <div class="top-container">
+            <nav id="navbar">
+                <h2>Navigation</h2>
+                <ul id="top-menu">
+                    <li><a href="../index.html" title="The place where I belong">Home</a></li>
+                    <li><a href="../old-html/info.html"
+                            title="The amount of info here may overload your browser. Proceed with caution.">Info
+                            Page</a></li>
+                    <li><a href="../error_pages/404.html" title="forced error">404</a></li>
+                    <li><a href="../translate.html" title="From Russia with love">Translate</a></li>
+                    <li><a href="../old-html/game.html" title="The last game you'll ever play">Games</a></li>
+                    <li><a href="../goonspace.html" title="go directly to ludicrous speed">Jump to Plaid</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <section>
+            <p>Welcome to Fun</p>
+            <a href="../js-games/snek.html">Click for snek game</a>
+            <br />
+            <a href="../js-games/ray.html">Click for ray stroke</a>
+            <form name="playForm">
+                Wants to Play <input type="checkbox" name="wantsToPlay" />
+                <br />
+                <input type="button" value="PLAY" onclick="boxAuth();" />
+            </form>
+        </section>
+        <p>COllect THat MoneY</p>
+        <section id="top-drag">
+            <p>The Ground</p>
+            <img src="../images/coin.jpg" class="picture">
+            <img src="../images/coin.jpg" class="picture">
+            <img src="../images/coin.jpg" class="picture">
+        </section>
+        <section id="bot-drag">
+            <p>Your Pocket</p>
+        </section>
+
+        <footer id="footer">
+            <p id="C4"></p>
+            <span id="footer-copyright-text">
+                Copyright kingswulfe cpyYear() Isaiah K. Lee. All Rights Reserved.
+            </span>
+        </footer>
+
+    </div>
     <script src="js/game.js"></script>
+    <script src="../js/footer.js"></script>
 
 </body>
 

@@ -1,7 +1,11 @@
 #loginform {
     //border: solid yellow 1px;
+    border: black 1px solid;
     padding: 20px;
     align-items: center;
+    background-color: rgb(37, 146, 132);
+    color: white;
+    height: 100px;
 }
 #loginform form { display: table;}
 #loginform p    { display: table-row;}

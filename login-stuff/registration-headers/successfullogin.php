@@ -19,7 +19,7 @@
 <body>
     <div id="big-wrapper">
         <p>Successful login!</p>
-        <a href="../../index.html">back to index</a>
+        <a href="../../index.php">back to index</a>
     </div>
 </body>
 

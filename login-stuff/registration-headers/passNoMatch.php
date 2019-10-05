@@ -21,7 +21,7 @@
         <p>Passwords do not match :(</p>
         <a href="../register.html">try again</a>
         <p>or</p>
-        <a href="../../index.html">back to index</a>
+        <a href="../../index.php">back to index</a>
     </div>
 </body>
 

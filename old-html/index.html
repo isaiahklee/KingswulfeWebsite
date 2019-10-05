@@ -24,7 +24,7 @@
                 <img src="images/me.png" alt="cool logo" height="75" hspace="100" />
                 <div id="header-text">
                     <h1>Isaiah Kingswulfe Lee</h1>
-                    <p>Programmer, Creator, Artist</p>
+                    <p>Programmer, Artist, Creator</p>
                 </div>
             </div>
             <div id="loginform">
@@ -54,25 +54,28 @@
         <br />
         <div class="top-container">
             <nav id="navbar">
-                <h2>Projects</h2>
+                <h2>Navigation</h2>
                 <ul id="top-menu">
-                    <li><a href="goonspace.html" title="go directly to ludicrous speed">Jump to Plaid</a></li>
+                    <li><a href="index.html" title="The place where I belong">Home</a></li>
                     <li><a href="old-html/info.html"
                             title="The amount of info here may overload your browser. Proceed with caution.">Info
                             Page</a></li>
                     <li><a href="error_pages/404.html" title="forced error">404</a></li>
-                    <li><a href="translate.html" title="From Russia with love">Translate</a></li>
+                    <li><a href="php/translate.php" title="From Russia with love">Translate</a></li>
                     <li><a href="old-html/game.html" title="The last game you'll ever play">Games</a></li>
+                    <li><a href="goonspace.html" title="go directly to ludicrous speed">Jump to Plaid</a></li>
                 </ul>
             </nav>
         </div>
 
 
 
-        <!-- THIS SECTION is for the eventual reactive side bar.-->
+
         <br />
 
         <div id="page-middle">
+
+            <!-- THIS SECTION is for the reactive side bar.-->
             <aside id="my-aside" role="complementary">
                 <div class="text-center">
                     <div class="my-face" style="background-image: url(images/deletthis.jpg);"></div>
@@ -81,40 +84,31 @@
                 </div>
                 <nav id="my-aside-nav" role="navigation" class="navbar">
                     <ul>
-                        <li class="active"><a href="login-stuff\registration-headers\success.php"
-                                data-nav-section="home">Home</a></li>
-                        <li><a href="login-stuff/registration-headers/InvalidEmail.php"
-                                data-nav-section="about">About</a></li>
-                        <li><a href="login-stuff/registration-headers/InvalidName.php"
-                                data-nav-section="education">Education</a></li>
-                        <li><a href="login-stuff/registration-headers/emailInUse.php"
-                                data-nav-section="projects">Projects</a></li>
-                        <li><a href="login-stuff/registration-headers/nameInUse.php"
-                                data-nav-section="skills">Skills</a></li>
-                        <li><a href="login-stuff/registration-headers/passNoMatch.php"
-                                data-nav-section="contact">Contact</a></li>
+                        <li class="active"><a href="#home" data-nav-section="home"
+                                onclick="switchSection('home');">Home</a>
+                        </li>
+                        <li><a href="#about" data-nav-section="about" onclick="switchSection('about');">About</a></li>
+                        <li><a href="#education" data-nav-section="education"
+                                onclick="switchSection('education');">Education</a></li>
+                        <li><a href="#projects" data-nav-section="projects"
+                                onclick="switchSection('projects');">Projects</a></li>
+                        <li><a href="#skills" data-nav-section="skills" onclick="switchSection('skills');">Skills</a>
+                        </li>
+                        <li><a href="#contact" data-nav-section="contact"
+                                onclick="switchSection('contact');">Contact</a></li>
                     </ul>
                 </nav>
             </aside>
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
 
             <!-- THE MEAT and potatoes of the pages content-->
             <section id="main-section">
-                <div id="guts">
+                <div id="oofbutton">
                     <form>
                         <input type="button" value="DO NOT PRESS" onclick="playSound();checkFridge();" />
                     </form>
+                </div>
+                <div id="inserted-html">
+
                 </div>
             </section>
 
@@ -128,10 +122,9 @@
         </footer>
     </div>
     <!-- JS Goes here if it needs to be loaded after page-->
-    <script src="js/test1.js"></script>
+    <script src="js/index.js"></script>
+    <script src="js/footer.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
-
-
 
 </body>
 

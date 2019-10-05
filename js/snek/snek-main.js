@@ -12,8 +12,8 @@ let pause = true;
 function setup(){
     //noCursor();
     frameRate(framerate);
-    createCanvas(canvasW, canvasH);
-
+    createCanvas(canvasW, canvasH).parent('snek-canvas');
+    
     //instantiate snake
     snek = new snakebody(boardsize/2, boardsize/2, boardsize);
 

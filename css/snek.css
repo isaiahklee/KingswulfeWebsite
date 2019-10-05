@@ -1,27 +1,101 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+a {
+  font: Tahoma;
+  text-decoration: none;
+}
+
+header, section, footer, aside, nav, article, hgroup {
+  display: block;
+}
+
+#big-wrapper {
+  width: 100%;
+  margin: 20px;
+  padding: 20px;
+}
+
+h1 {
+  color: black;
+  font: bold 32px Tahoma;
+  text-align: center;
+  display: inline;
+}
+
+h2 {
+  font: bold 20px Tahoma;
+  margin: 5px;
+}
+
+h3 {
+  font: bold 20px Tahoma;
+}
+
+#big-wrapper {
+  background-color: rgba(98, 165, 132, 0.7);
+  background-blend-mode: multiply;
+  padding: 20px left right bottom;
+  text-align: center;
+}
+
+#big-header {
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+#logo-and-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: left;
+}
+
+#header-text {
+  padding: 8px;
+}
+
+#instructions {
+  font-weight: bold;
+}
+
 body {
+  font-family: Arial;
+  border: none;
   background-color: #259284;
+  background-position: center;
+  background-size: auto;
+  background-repeat: no-repeat;
   color: black;
   text-align: center;
   padding: 20px;
 }
 
 #game-board {
-  display: inline-block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   height: 800px;
   width: 800px;
   margin: 20px top;
   border: 10px solid yellow;
 }
 
-#big-header {
-  display: inline;
-  text-align: center;
-}
-
 .top-container {
   border: 3px solid #24927a;
-  height: 100px;
-  margin: 10px;
+  border: black 1px solid;
+  height: auto;
+  color: white;
   padding: 10px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -30,45 +104,122 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: horizontal;
           flex-direction: horizontal;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  border-radius: 25px;
   -webkit-box-shadow: #41B3A3;
           box-shadow: #41B3A3;
   background: #a36072;
-  border: 1px solid yellow;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: bold;
 }
 
 #navbar {
+  color: white;
   -webkit-box-flex: 1;
-  border: 1px solid yellow;
+      -ms-flex: 1;
+          flex: 1;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-#top-menu {
-  border: 1px solid yellow;
+nav h2 {
+  font-size: 24px;
+  padding-right: 15px;
+  border-right: 1px solid black;
+  margin-right: 5px;
 }
 
 #top-menu li {
-  background: white;
+  color: white;
+  padding-right: 5px;
   font: bold 14px Tahoma black;
   display: inline-block;
   list-style: none;
+  -webkit-transition: -webkit-transform .3s;
   transition: -webkit-transform .3s;
-  border-radius: 10px;
-  -webkit-box-shadow: rgba(110, 110, 110, 0.7);
-          box-shadow: rgba(110, 110, 110, 0.7);
+  transition: transform .3s;
+  transition: transform .3s, -webkit-transform .3s;
+  border-right: 1px solid black;
 }
 
 #top-menu li:hover {
-  -webkit-transform: translate(0px, -5px);
-          transform: translate(0px, -5px);
+  -webkit-transform: translate(0px, 5px);
+          transform: translate(0px, 5px);
 }
 
 #top-menu li a {
-  text-decoration: none;
-  color: black;
-  padding: 5px;
   display: block;
+  padding: 5px;
+  text-decoration: none;
+  color: white;
+}
+
+#loginform {
+  border: black 1px solid;
+  padding: 20px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #259284;
+  color: white;
+  height: 100px;
+}
+
+#loginform form {
+  display: table;
+}
+
+#loginform p {
+  display: table-row;
+}
+
+#loginform label {
+  display: table-cell;
+}
+
+#loginform input {
+  display: table-cell;
+  margin: 2px;
+}
+
+#login-buttons {
+  display: table-row;
+}
+
+#loginform input[type=text], #loginform input[type=password] {
+  border: 0;
+  background: white;
+  display: block;
+  text-align: center;
+  border: 1px solid #24927a;
+  border-radius: 24px;
+  padding: 4px 12px;
+  width: 100px;
+  outline: none;
+  color: black;
+}
+
+input[type=submit],
+input[value=Register] {
+  border-radius: 5px;
+  border: 0;
+  width: 80px;
+  height: 25px;
+  font-family: Tahoma;
+  background: white;
+}
+
+#footer {
+  text-align: center;
+  padding: 20px;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
 }
 /*# sourceMappingURL=snek.css.map */
