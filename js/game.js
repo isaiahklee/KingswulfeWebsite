@@ -13,7 +13,7 @@
 function boxAuth(value) {
     if(document.playForm.wantsToPlay.checked){
         if(value == "Slithery Snake"){
-            window.location.href = 'js-games/snek.html';
+            window.location.href = 'snek.php';
         }else if(value == "Ray Stroke"){
             window.location.href = 'js-games/ray.html';
         }else if(value == "Unusual Words"){
@@ -68,5 +68,7 @@ function allowDrop(e) {
   function drop(e) {
     e.preventDefault();
     var data = e.dataTransfer.getData("text");
-    e.target.appendChild(document.getElementById(data));
+    if ( e.target.nodeName !== "IMG" ) {
+        e.target.appendChild(document.getElementById(data));
+    }
   }
