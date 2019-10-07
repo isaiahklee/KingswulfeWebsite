@@ -1,7 +1,5 @@
-
-
 //need to run cgi python script on server with user input and return data to html to be displayed.
-
+/** 
 function runtest(){ 
     var xhr = new XMLHttpRequest();
     var text = 
@@ -13,7 +11,6 @@ function runtest(){
     xhr.send();
     console.log("there was an attempt");
 }
-
 function runtest2() {
     var xhttp = new XMLHttpRequest();
     xhttp.onreadystatechange = function() {
@@ -25,3 +22,9 @@ function runtest2() {
     xhttp.open("GET", "xmlhttp_info.txt", true);
     xhttp.send();
   }
+  **/
+
+
+function changeHref(){
+  window.location.href = 'unusualwords.php?run=true&url=' + document.getElementById("scrapeURL").value;
+}

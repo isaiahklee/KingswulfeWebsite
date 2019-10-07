@@ -19,6 +19,7 @@
 <body>
     <div id="big-wrapper">
         <p>Thank you for confirming your email!</p>
+        <p>You can now log in with your confirmed username and password!</p>
         <a href="../index.php">back to index</a>
     </div>
 </body>

@@ -19,6 +19,7 @@
 <body>
     <div id="big-wrapper">
         <?php include('_nav.php');?>
+
         <br />
         <div>
             <h3>
@@ -30,14 +31,17 @@
             <br />
             <div id="text-boxes">
                 <form>
-                    URL to scrape: <input type="text" size="60">
-                    <input type="button" onclick="runtest()" value="Submit" />
+                    URL to scrape: <input id="scrapeURL" type="text" size="60">
+                    <input type="button" onclick=changeHref() value="Submit" />
                 </form>
+                <br />
+                <p>please ensure to write the full url, including http:// or https://</p>
                 <br />
                 <form>
                     Unusual Words:
                     <br />
-                    <textarea readonly id="unusualtext" rows="10" cols="60"></textarea>
+                    <textarea readonly id="unusualtext" rows="10"
+                        cols="60"><?php include('shell_exec.php');?></textarea>
                 </form>
             </div>
         </div>

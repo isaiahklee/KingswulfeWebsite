@@ -41,8 +41,8 @@
         <h2>Navigation</h2>
         <ul id="top-menu">
             <li><a href="../index.php" title="The place where I belong">Home</a></li>
-            <li><a href="../info.php" title="If enough people do this, I could make a project out of it...">Info
-                    Page</a></li>
+            <li><a href="../info.php" title="If enough people do this, I could make a project out of it...">Website
+                    Census</a></li>
             <li><a href="../translate.php" title="From Russia with love">Translate</a></li>
             <li><a href="../game.php" title="Beware of flashing lights">Projects</a></li>
             <li><a href="../goonspace.html" title="go directly to ludicrous speed">Jump to Plaid</a></li>

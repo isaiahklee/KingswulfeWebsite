@@ -20,16 +20,45 @@
         <br />
 
         <article>
-            Welcome <?php echo $_POST["fname"]." ".$_POST["lname"]; ?><br>
-            Your email address is: <?php echo $_POST["email"]; ?><br>
-            You identify as <?php echo $_POST["gender"]; ?><br>
-            Your favorite meat/s is/are: <?php 
-    foreach($_POST["meat"] as $result) {
-        echo $result." " ;
-    }?><br>
-            Your favorite activity is: <?php echo $_POST["activities"]; ?><br>
-            You said, "<?php echo $_POST["bio"]; ?>" about yourself.<br>
-            You submitted <?php echo $_POST["cdata"]; ?>, but that's not your c drive, is it. <br>
+            <strong>Welcome!</strong>
+            <br />
+            According to you,
+            <br />
+            Your name is: &nbsp
+            <?php if(isset($_POST["fname"]))
+            echo $_POST["fname"]." ".$_POST["lname"]; 
+            ?>
+            <br>
+            Your email address is:
+            <?php 
+            echo $_POST["email"]; 
+            ?>
+            <br>
+            You identify as
+            <?php if(isset($_POST["gender"])){
+                echo $_POST["gender"]; 
+            }else{
+                echo "nothing";
+            }?>
+            <br>
+            Your favorite meat/s is/are:
+            <?php if(isset($_POST["meat"])){
+                foreach($_POST["meat"] as $result) {
+                    echo $result." " ;
+                }
+            }else{
+                echo "None of the above";
+            }?>
+            <br>
+            Your favorite activity is:
+            <?php echo $_POST["activities"]; ?>
+            <br>
+            You said, "
+            <?php echo $_POST["bio"]; ?>" about yourself.
+            <br>
+            You submitted
+            <?php echo $_POST["cdata"]; ?>, but that's not your c drive, is it.
+            <br>
 
         </article>
 

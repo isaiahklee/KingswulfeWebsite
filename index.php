@@ -1,3 +1,4 @@
+<?php include('_sessionstart.php');?>
 <!DOCTYPE HTML>
 <html lang="en">
 
