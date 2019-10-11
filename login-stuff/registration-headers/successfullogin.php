@@ -1,4 +1,4 @@
-<?php include('../../_sessionstart.php');?>
+<?php include('../../phpincludes/_sessionstart.php');?>
 <?php $_SESSION['loggedin'] = TRUE; ?>
 <!DOCTYPE HTML>
 <html lang="en">

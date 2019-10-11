@@ -53,7 +53,7 @@
 <body>
 
     <div id="big-wrapper">
-        <?php include('_nav.php');?>
+        <?php include('phpincludes/_nav.php');?>
 
         <section>
             <br />
@@ -102,7 +102,7 @@
 
             </section>
         </div>
-        <?php include('_footer.php');?>
+        <?php include('phpincludes/_footer.php');?>
     </div>
     <script src="js/game.js"></script>
     <script src="js/footer.js"></script>

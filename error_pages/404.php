@@ -15,14 +15,14 @@
 <body>
     <div id="big-wrapper">
 
-        <?php include('_err_nav.php');?>
+        <?php include('../phpincludes/_nav.php');?>
 
         <br />
         <h1><strong>404 page not found</strong></h1>
         <br />
         <p>It looks like the page you are looking for doesn't exist.</p>
         <br />
-        <?php include('../_footer.php');?>
+        <?php include('../phpincludes/_footer.php');?>
     </div>
 
     <script src="../js/footer.js"></script>

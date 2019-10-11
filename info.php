@@ -16,7 +16,7 @@
 
     <div id="big-wrapper">
 
-        <?php include('_nav.php');?>
+        <?php include('phpincludes/_nav.php');?>
 
         <!--Intro and Instructions (Make NAV and boxes for formatting)-->
         <article id="info=stuff">
@@ -66,14 +66,7 @@
 
             </form>
         </article>
-
-
-        <footer id="footer">
-            <p id="C4"></p>
-            <span id="footer-copyright-text">
-                Copyright kingswulfe cpyYear() Isaiah K. Lee. All Rights Reserved.
-            </span>
-        </footer>
+        <?php include('phpincludes/_footer.php');?>
     </div>
 
     <!-- JS Goes here if it needs to be loaded after page-->

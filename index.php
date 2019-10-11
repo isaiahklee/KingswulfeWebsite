@@ -1,4 +1,3 @@
-<?php include('_sessionstart.php');?>
 <!DOCTYPE HTML>
 <html lang="en">
 
@@ -20,7 +19,7 @@
 <body>
     <div id="big-wrapper">
 
-        <?php include('_nav.php');?>
+        <?php include('phpincludes/_nav.php');?>
 
         <br />
 
@@ -65,7 +64,7 @@
             </section>
 
         </div>
-        <?php include('_footer.php');?>
+        <?php include('phpincludes/_footer.php');?>
     </div>
     <!-- JS Goes here if it needs to be loaded after page-->
     <script src="js/index.js"></script>

@@ -18,7 +18,7 @@
 
 <body>
     <div id="big-wrapper">
-        <?php include('_nav.php');?>
+        <?php include('phpincludes/_nav.php');?>
 
         <br />
         <div>
@@ -45,7 +45,7 @@
                 </form>
             </div>
         </div>
-        <?php include('_footer.php');?>
+        <?php include('phpincludes/_footer.php');?>
     </div>
     <script src="js/unusualwords.js"></script>
     <script src="js/footer.js"></script>
