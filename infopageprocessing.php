@@ -1,3 +1,9 @@
+<?php 
+    $corepath = $_SERVER['DOCUMENT_ROOT'];
+    $sesspass = $corepath .= '/phpincludes/_sessionstart.php';
+    include($sesspass);
+?>
+<!DOCTYPE HTML>
 <html>
 
 <head>
@@ -15,7 +21,7 @@
     <div id="big-wrapper">
 
         <!-- this is -->
-        <?php include('_nav.php');?>
+        <?php include('phpincludes/_nav.php');?>
         <!-- wild! -->
         <br />
 

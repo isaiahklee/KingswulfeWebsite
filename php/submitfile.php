@@ -1,5 +1,5 @@
 <?php
-    include('../_sessionstart.php');
+    include('../phpincludes/_sessionstart.php');
     //opens connection to mysql server
     include('connection.php');
     //select DB

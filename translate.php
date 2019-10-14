@@ -1,3 +1,9 @@
+<?php 
+    $corepath = $_SERVER['DOCUMENT_ROOT'];
+    $sesspass = $corepath .= '/phpincludes/_sessionstart.php';
+    include($sesspass);
+?>
+
 <!DOCTYPE HTML>
 <html lang="en">
 
