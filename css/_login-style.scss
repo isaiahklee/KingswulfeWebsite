@@ -34,3 +34,14 @@ input[value=Register]{
     font-family: Tahoma;
     background: white; 
 }
+
+
+#loggedin-banner{
+    border: black 1px solid;
+    padding: 20px;
+    align-items: center;
+    background-color: rgb(37, 146, 132);
+    color: white;
+    height: 100px;
+    width: 100px;
+}

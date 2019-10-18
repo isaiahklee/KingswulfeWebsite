@@ -25,9 +25,13 @@
 <body>
     <div id="big-wrapper">
         <?php include('phpincludes/_nav.php');?>
-
         <br />
         <div>
+            <h1>Attention:</h1>
+            <h2>This project is currently under maintenance and is not online right now.</h2>
+            <br />
+            <br />
+            <br />
             <h3>
                 This page will take a url, run a python script, and return a list of unusual words from that url.
                 In this context, an unusual word is defined to be not in the top 10'000 as determined by n-gram

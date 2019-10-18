@@ -58,15 +58,11 @@
 
             <!-- THE MEAT and potatoes of the pages content-->
             <section id="main-section">
-                <div id="oofbutton">
-                    <form>
-                        <input type="button" value="DO NOT PRESS" onclick="playSound();" />
-                    </form>
-                </div>
                 <br />
                 <div id="inserted-html">
 
                 </div>
+                <br />
             </section>
 
         </div>

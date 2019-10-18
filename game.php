@@ -69,8 +69,6 @@
                 on.</h3>
             <br />
             <form name="playForm">
-                <input type="checkbox" name="wantsToPlay" /> I accept the dangers inherent in attempting these games
-                <br />
                 <br />
                 <input type="button" class="game-button" onclick="boxAuth('Slithery Snake');" value="Slithery Snake" />
                 <br />

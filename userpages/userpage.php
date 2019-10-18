@@ -13,7 +13,7 @@
     <title>Isaiah Kingswulfe Lee</title>
 
     <!-- css stylesheet\s location\s -->
-    <link rel="stylesheet" type="text/css" href="css/index-style.css" />
+    <link rel="stylesheet" type="text/css" href="../css/index-style.css" />
 
     <!-- favicon.ico and apple-touch-icon.png? in root directory -->
     <link rel="shortcut icon" href="images/favicon.ico" />
@@ -25,7 +25,7 @@
 <body>
     <div id="big-wrapper">
 
-        <?php include('phpincludes/_nav.php');?>
+        <?php include('../phpincludes/_nav.php');?>
 
         <br />
 
@@ -36,11 +36,23 @@
             when you type in an unlock code, unlocks (so displays new) web links to "restricted" parts of the website,
             like the game map for mals dnd. 
             -->
+        <div id='user-menu'>
+            <form>
+                <input id="user-logout-button" type='button' value='Logout'
+                    onclick='window.location.href = \"/login-stuff/logout.php\"' />
+                <br />
+                <input id="user-picture-button" type='button' value='Change Profile Picture'
+                    onclick='window.location.href = \"\"' />
+                <br />
+                <input id="user-delete-button" type='button' value='Delete Account'
+                    onclick='window.location.href = \"\"' />
+            </form>
+        </div>
 
-        <?php include('phpincludes/_footer.php');?>
+        <?php include('../phpincludes/_footer.php');?>
     </div>
     <!-- JS Goes here if it needs to be loaded after page-->
-    <script src="js/footer.js"></script>
+    <script src="../js/footer.js"></script>
 </body>
 
 </html>

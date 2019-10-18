@@ -207,6 +207,18 @@ input[value=Register] {
   background: white;
 }
 
+#loggedin-banner {
+  border: black 1px solid;
+  padding: 20px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #259284;
+  color: white;
+  height: 100px;
+  width: 100px;
+}
+
 #page-middle {
   display: -webkit-box;
   display: -ms-flexbox;

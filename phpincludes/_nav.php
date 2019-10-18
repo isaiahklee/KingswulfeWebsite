@@ -19,6 +19,7 @@
         <div id='loggedin-banner'>
             <form>
                 <input type='button' value='logout' onclick='window.location.href = \"/login-stuff/logout.php\"' />
+                <input type='button' value='userpage' onclick='window.location.href = \"/userpages/userpage.php\"' />
             </form>
         </div>
         ";

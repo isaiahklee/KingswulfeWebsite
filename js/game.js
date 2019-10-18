@@ -11,16 +11,12 @@
 **/
 
 function boxAuth(value) {
-    if(document.playForm.wantsToPlay.checked){
-        if(value == "Slithery Snake"){
-            window.location.href = 'snek.php';
-        }else if(value == "Ray Stroke"){
-            window.location.href = 'js-games/ray.html';
-        }else if(value == "Unusual Words"){
-            window.location.href = 'unusualwords.php';
-        }
-    }else{
-        alert("You must accept responsibility for playing before you can play.")
+    if(value == "Slithery Snake"){
+        window.location.href = 'snek.php';
+    }else if(value == "Unusual Words"){
+        window.location.href = 'unusualwords.php';
+    }else if(value == "Ray Stroke"){
+        window.location.href = 'js-games/ray.html';
     }
 }
 

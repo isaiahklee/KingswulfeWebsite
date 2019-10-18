@@ -109,7 +109,11 @@ function updateMovement(){
 }
 
 function modeButton(){
-    mode = (mode+1)%2;
+    if(document.getElementById("wantsToPlay").checked){
+        mode = (mode+1)%2;
+    }else{
+        alert("Check the Epilepsy Warning box to stop this Epilepsy Warning pop-up.")
+    }
 }
 function toggleTurning(){
     turnMode = (turnMode+1)%2;
